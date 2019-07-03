@@ -28,6 +28,7 @@
 
             <Button
                     android:text="Стол №1"
+
                     android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:background="@color/Green"
@@ -78,6 +79,7 @@
         <Button
 
                 android:text="Карта столов"
+                android:onClick="click"
                 android:layout_marginLeft="90dp"
                 android:layout_marginRight="90dp"
                 android:layout_marginBottom="30dp"

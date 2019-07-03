@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.myapplication.table_info">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            android:id="@+id/top">
+        <TextView
+                android:layout_marginLeft="50dp"
+                android:text="\nСтол №1"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/table_namber"/>
+        <TextView
+                android:layout_marginLeft="50dp"
+                android:text="\n\nСвободен"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/table_busy"/>
+        <TextView
+                android:layout_marginLeft="50dp"
+                android:text="\n\nКоличетво мест: 4"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/table_places"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/top"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+
+                android:hint="Имя"
+                android:inputType="text"
+                android:selectAllOnFocus="true"/>
+        <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="100dp"
+                android:hint="Номер"
+                android:inputType="phone"
+                android:selectAllOnFocus="true"/>
+        <Button
+                android:text="Забронировать"
+                android:layout_width="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/button"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

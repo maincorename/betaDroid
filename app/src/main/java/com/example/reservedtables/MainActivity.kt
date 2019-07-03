@@ -15,8 +15,13 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-    fun click(view: View) {
+    fun map(view: View) {
         val map = Intent(this, reserve::class.java)
         startActivity(map)
     }
+    fun info(view: View){
+        val info= Intent(this,com.example.myapplication.table_info::class.java)
+        startActivity(info)
+    }
+    
     }
